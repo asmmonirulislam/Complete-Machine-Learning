@@ -1,0 +1,25 @@
+MST = Minimum Spanning Tree
+
+A Minimum Spanning Tree for a weighted, connected, and undirected graph is a spanning tree
+that:
+
+    1. has no cycle
+    2. connects all vertices
+    3. has minimum weight (sum of all edges)
+
+Kruskal’s Algorithm: 
+
+A greedy approach that sorts all edges by weight and builds the tree using 
+a Union-Find structure.
+
+    1. Sort all the edges in ascending order of their weights
+    2. pick the smallest edge, and check whether it creates any cycle with the spanning tree.
+        if cycle is not created, include the edge
+    3. Repeat step 2 until there are (V-1) edges in the spanning tree.
+    
+
+
+Prim’s Algorithm: 
+A greedy algorithm that starts from a single node and grows the tree by grabbing 
+the adjacent edge with the minimum weight.
+
